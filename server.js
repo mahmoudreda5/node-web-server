@@ -49,6 +49,13 @@
 
  });
 
+ app.get('/protofilio', (req, res) => {
+     res.render('protofilio.hbs', {
+         pageTitle: "protofilio",
+        message: "welcome to projects page"
+     });
+ });
+
  app.get('/about', (req, res) => {
      res.render('about.hbs', {
          pageTitle: "About",
